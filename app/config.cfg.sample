@@ -1,0 +1,28 @@
+# sample configuration
+
+# MQTT broker  related config
+[mqtt]
+host = 127.0.0.1
+port = 1883
+
+# polling interval for sensors
+pollinterval = 30
+
+# topic for status messages
+statustopic = onewire-to-mqtt/status
+
+# Onewire related config
+[onewire]
+host= localhost
+port = 4304
+
+[log]
+verbose = true
+logfile = /var/log/onewire-to-mqtt.log
+
+# list of sensors to be polled and names to be used in HASS
+[sensors]
+28.100000000000 = Hallway
+10.200000000000 = Bedroom
+28.300000000000 = Outside
+10.400000000000 = Kitchen
